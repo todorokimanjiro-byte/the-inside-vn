@@ -1,0 +1,6 @@
+{
+  "name": "THE INSIDE - Son Dưỡng Thuần Chay",
+  "description": "Trang thương mại điện tử mua sắm các dòng son dưỡng thuần chay Việt Nam từ thương hiệu THE INSIDE.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

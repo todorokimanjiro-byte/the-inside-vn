@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --brand-beige: #F2ECE4;
+  --brand-cream: #FAF9F6;
+  --brand-clay: #EAE7E1;
+  --brand-accent: #9A8478;
+  --brand-charcoal: #2D2D2D;
+  --brand-terracotta: #806C62;
+  --brand-card-bg: #FAF9F6;
+}
+
+.dark, [data-theme="dark"] {
+  --brand-beige: #201A18;       /* Elevating card/section surfaces above base */
+  --brand-cream: #14100E;       /* Deep warm luxurious organic obsidian background */
+  --brand-clay: #2F2723;        /* Warm earth divider line / border / secondary outline color */
+  --brand-accent: #D9C3B2;      /* Glorious light champagne sand gold for strong highlights & titles */
+  --brand-charcoal: #FAF7F4;    /* Super legible and eye-soothing milk-off-white text */
+  --brand-terracotta: #E2A482;  /* Rich sunset terracotta for active pills, gold details & CTA actions */
+  --brand-card-bg: #201A18;     /* Unified elevated surface background */
+}
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --color-brand-beige: var(--brand-beige);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-clay: var(--brand-clay);
+  --color-brand-accent: var(--brand-accent);
+  --color-brand-charcoal: var(--brand-charcoal);
+  --color-brand-terracotta: var(--brand-terracotta);
+  --color-brand-card-bg: var(--brand-card-bg);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--brand-cream);
+  color: var(--brand-charcoal);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Elegant custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--brand-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--brand-clay);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-accent);
+}
+
+/* Smooth background transitions for interactive items */
+* {
+  transition-property: background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
